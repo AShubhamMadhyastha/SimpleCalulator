@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Dark Mode Toggle button moved to the side -->
+        <button id="darkModeToggle" class="mode-toggle">🌙</button>
+
+        <input type="text" id="display" disabled>
+        
+        <div class="calculator-buttons">
+            <div>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operation">/</button>
+            </div>
+            <div>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operation">*</button>
+            </div>
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operation">-</button>
+            </div>
+            <div>
+                <button>0</button>
+                <button class="operation">+</button>
+                <button class="clear">C</button>
+                <button class="operation">=</button>
+            </div>
+            <div>
+                <button class="operation">sqrt</button>
+                <button class="operation">^</button>
+                <button class="operation">log</button>
+                <button id="voiceInput">🎤</button>
+            </div>
+        </div>
+        
+        <div id="history-panel">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </div>
+        <div id="memory-controls">
+            <button id="memoryPlus">M+</button>
+            <button id="memoryMinus">M-</button>
+            <button id="memoryRecall">MR</button>
+            <button id="memoryClear">MC</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
